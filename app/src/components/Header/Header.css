@@ -6,12 +6,38 @@ body header {
     top: 0;
     display: inline-flex;
     padding: 10px;
+    z-index: 2;
+}
+
+body .sidebar-sticky {
+    min-height: 80px!important;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    transform: translateY(-100%);
+    animation: StickyBar .5s forwards;
+    background-color: white;
+    box-shadow: 0px 16px 20px 20px rgb(0 0 0 / 15%);
+}
+
+@keyframes StickyBar {
+    0% {
+        transform: translateY(-100%);
+    } 100% {
+        transform: translateY(0%);
+    }
+}
+
+body .sidebar-sticky img {
+    width: 150px;
 }
 
 body header img {
     width: 200px;
     height: auto;
     margin-right: 5%;
+    transition: width .5s;
 }
 
 body header nav {
@@ -63,4 +89,11 @@ body header nav ul li a::after {
 
 body header nav ul li a:hover::after {
     width: 100%;
+}
+
+@media (max-width: 700px) {
+    
+    body header nav {
+        display: none;
+    }
 }

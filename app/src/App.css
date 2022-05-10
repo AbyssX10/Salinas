@@ -1,5 +1,11 @@
 .App {
-    width: 100%;
-    min-height: 100%;
-    height: auto;
-  }
+  width: 100%;
+  min-height: 100%;
+  height: auto;
+}
+
+.container {
+  width: 100%;
+  min-height: 650px;
+  height: auto;
+}

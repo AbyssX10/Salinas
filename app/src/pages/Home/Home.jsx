@@ -5,7 +5,14 @@ import "./Home.css";
 export default class Home extends Component {
     render() {
         return (
-            <div>Home</div>
+            <>
+                <div className="container">
+
+                </div>
+                <div className='container'>
+
+                </div>
+            </>
         )
     }
 }
