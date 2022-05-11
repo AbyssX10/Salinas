@@ -1,0 +1,57 @@
+.banner {
+    background-image: url("../Home/img/banner.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.container .box-5 span {
+    width: auto;
+    height: auto;
+    background-color: white;
+    border: 1px solid #ff44956e;
+    border-radius: 20px;
+    padding: 10px;
+    font-size: 15px;
+    color: #FF4495;
+}
+
+.container .box-5 h1 {
+    font-size: 50px;
+    margin-top: 5%;
+    margin-bottom: 15px;
+    color: #383838;
+    text-shadow:1px 0 0 white,0 1px 0 white,-1px 0 0 white,0 -1px 0 white;
+}
+
+.container .box-5 p {
+    font-size: 20px;
+    margin-bottom: 15%;
+    color: #505050;
+    text-shadow:1px 0 0 white,0 1px 0 white,-1px 0 0 white,0 -1px 0 white;
+}
+
+.container .box-5 a {
+    width: auto;
+    height: auto;
+    padding: 15px 30px 15px 30px;
+    background: rgb(255, 68, 149);
+    background: linear-gradient(180deg, rgba(255, 68, 149, 1) 50%, rgba(255, 126, 95, 1) 100%);
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 30px;
+    color: white;
+    transition: box-shadow .5s;
+}
+
+.container .box-5 a:hover {
+    box-shadow: 0 0 15px 0 rgb(255, 68, 149);
+}
+
+@media (max-width: 700px) {
+    
+    .banner {
+        background-image: url("../Home/img/banner-mobile.png");
+        padding-top: 35%!important;
+    }
+}

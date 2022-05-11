@@ -4,8 +4,69 @@
   height: auto;
 }
 
-.container {
+a {
+  text-decoration: none;
+  color: #505050;
+  outline: none;
+}
+
+ul {
+  list-style: none;
+}
+
+h2 {
+  text-align: center;
+}
+
+.container,
+.container-flex,
+.container-grid-3 {
   width: 100%;
   min-height: 650px;
   height: auto;
+  padding: 5%;
+}
+
+.container-grid-3 {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 5%;
+}
+
+.container-flex {
+  display: inline-flex;
+}
+
+.box,
+.box-3,
+.box-5 {
+  min-height: 100%;
+  height: auto;
+}
+
+.box {
+  width: 100%;
+}
+
+.box-3 {
+  width: 30%;
+}
+
+.box-5 {
+  width: 50%;
+  padding: 5%;
+}
+
+@media (max-width: 700px) {
+  
+  .box-3,
+  .box-5 {
+    width: 100%;
+    min-height: 300px;
+  }
+
+  .container-flex,
+  .container-grid-3 {
+    display: block;
+  }
 }

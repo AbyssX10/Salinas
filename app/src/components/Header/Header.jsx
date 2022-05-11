@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
 import $ from "jquery";
 
+import { ReactComponent as IconList } from "./svg/list.svg";
+
 import logo from "./img/logo.png";
 
 import "./Header.css";
@@ -17,6 +19,10 @@ $(document).ready(() => {
         }
     });
 });
+
+function openMenu(){
+    $(".menu").toggleClass("menu-in");
+}
 
 export default class Header extends Component {
     render() {
@@ -43,6 +49,10 @@ export default class Header extends Component {
                         </li>
                     </ul>
                 </nav>
+
+                <button type='button' onClick={openMenu}>
+                    <IconList />
+                </button>
             </header>
         )
     }
