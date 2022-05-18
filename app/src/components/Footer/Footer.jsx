@@ -8,7 +8,7 @@ import { ReactComponent as IconMail } from "./svg/mail.svg";
 import { ReactComponent as IconPhone } from "./svg/phone.svg";
 import { ReactComponent as IconGeo } from "./svg/geo.svg";
 
-import logo from "./img/logo.png";
+import logo from "./img/logo3.png";
 
 import "./Footer.css";
 
@@ -21,14 +21,14 @@ export default class Footer extends Component {
                         <img src={logo} alt="" />
                         <p>
                             Rápidos, oportunos y atentos. Así
-                            somos en <b>Salinas</b> y por eso
+                            somos en <b>Facilísimo</b> y por eso
                             somos la sensación del momento.
                         </p>
 
                         <div className='container'>
                             <ul>
                                 <li>
-                                    <a href="/">
+                                    <a href="https://www.facebook.com/AsideFACILISIMO/" target="_blank" rel="noreferrer">
                                         <IconFacebook />
                                     </a>
                                 </li>
@@ -53,13 +53,8 @@ export default class Footer extends Component {
                         </p>
                         <ul>
                             <li>
-                                <a href="/">
-                                    - Encomiendas
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/">
-                                    - Domicilios
+                                <a href="/servicios/tramites">
+                                    - Tramites con EPS
                                 </a>
                             </li>
                         </ul>
@@ -68,7 +63,7 @@ export default class Footer extends Component {
                         <h2>Contacto</h2>
                         <p>
                             Para obtener más información sobre nuestros servicios,
-                            no olvides en ponerte en contacto con nosotros.
+                            no olvides ponerte en contacto con nosotros.
 
                             <br />
                             <br />

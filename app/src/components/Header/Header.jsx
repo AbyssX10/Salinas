@@ -4,7 +4,7 @@ import $ from "jquery";
 
 import { ReactComponent as IconList } from "./svg/list.svg";
 
-import logo from "./img/logo.png";
+import logo from "./img/logo3.png";
 
 import "./Header.css";
 
